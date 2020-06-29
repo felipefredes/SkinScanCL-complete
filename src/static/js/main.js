@@ -26,7 +26,7 @@ $(document).ready(function () {
     $('#upload-file').submit(function (event) {
         if (document.getElementById("customFile").files.length == 0) {
             event.preventDefault();
-            alert("Please select a file before submit");
+            alert("Seleccione un archivo antes de enviar el formulario.");
         }
     });
 
@@ -34,7 +34,7 @@ $(document).ready(function () {
         //alert("Please enter image URL before submit");
         if (document.getElementById("url-input").value == "") {
             event.preventDefault();
-            alert("Please enter image URL before submit");
+            alert("Insertar una imagen antes de enviar el formulario");
         }
     });
 

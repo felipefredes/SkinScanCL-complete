@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1>Benign or Malignant</h1>
-<p class="comment">Find out if the skin lesion is normal or not. Upload image or specify URL.</p>
+<h1>Benigno o Maligno</h1>
+<p class="comment">Busca si la lesión en la piel es normal o no. Subir una imagen o especificar la URL.</p>
 <dive class="col-xs-6">
     <form action="/upload" id="upload-file" method="post" enctype="multipart/form-data">
-        <p class="comment">Select image to upload and press Detect:</p>
+        <p class="comment">Seleccionar la imagen y presionar Detectar:</p>
         <div class="custom-file">
             <input type="file" class="custom-file-input" name="file" id="customFile">
-            <label class="custom-file-label" for="customFile">Choose file</label>
+            <label class="custom-file-label" for="customFile">Seleccionar Archivo</label>
 
         </div>
 
@@ -17,14 +17,14 @@
         </div>
     </form>
 
-    <h5 class="comment">OR</h5>
-    <p class="comment">Enter image URL and press Detect:</p>
+    <h5 class="comment">O</h5>
+    <p class="comment">Ingresar la URL de la imagen y presionar Detectar:</p>
     <form action="/classify-url" id="submit-url" method="post">
         <div class="col-xs-4">
-            <input type="url" class="form-control" name="url" id="url-input" placeholder="Enter image URL">
+            <input type="url" class="form-control" name="url" id="url-input" placeholder="Ingresar URL de la imagen">
         </div>
         <div>
-            <input type="submit" class="btn btn-success" value="Detect">
+            <input type="submit" class="btn btn-success" value="Detectar">
         </div>
     </form>
     <h3 id="result">
