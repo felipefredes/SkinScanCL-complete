@@ -1,1 +1,1 @@
-web: gunicorn src.app:skin-scan-cl
+web: gunicorn src.app:app
